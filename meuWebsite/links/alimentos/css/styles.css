@@ -1,0 +1,43 @@
+body, html{
+    height: 100%;
+     margin: center;
+    ;
+}
+
+.fundo{
+    background-image: url(../img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.borda
+{
+    border-radius: 35px 5px 35px 5px;
+    background: rgb(255, 255, 255);
+    padding: 2.5px;
+    width: 450px;
+    height: 450px;
+}
+
+h1{
+    color:rgb(235, 105, 53);
+    font-style: italic;
+}
+
+h2{
+    margin-top: 10px;
+    color:rgb(235, 105, 53);
+    font-style: italic;
+}
+
+.icone
+{
+    border-radius: 10px 5px 10px 5px;
+    background: rgb(255, 255, 255);
+    padding: 2.5px;
+    width: 30px;
+    height: 30px;  
+}

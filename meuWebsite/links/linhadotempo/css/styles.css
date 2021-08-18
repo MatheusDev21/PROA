@@ -1,0 +1,46 @@
+.fundo{
+    background-image: url(../img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-family:fantasy;
+    font-size: 80px;
+    margin: 10px 100px 100px 100px;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    font-family:fantasy;
+    font-size: 60px;
+    
+}
+
+.imgf
+{
+    border-radius: 5px 5px 5px 5px;
+    background: rgb(255, 255, 255);
+    padding: 1.5px;
+    width: 420px;
+    height: 420px;
+}
+
+.videof
+{
+    border-radius: 5px 5px 5px 5px;
+    
+}
+
+.imgff
+{
+    border-radius: 5px 5px 5px 5px;
+    background: rgb(255, 255, 255);
+    padding: 1.5px;
+    width: 850px;
+    height: 720px;
+}
