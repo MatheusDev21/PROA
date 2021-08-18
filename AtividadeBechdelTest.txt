@@ -1,0 +1,15 @@
+1) A função desse site é bem executada?
+ Acredito que sim, como objetivo principal o site entrega sua principal função.
+
+2) Você encontrou algum fime interessante que passe nesse teste? Informe.
+
+ Um Lugar Silencioso: Parte II
+
+3) Você encontrou algum fime interessante que não passe nesse teste? Informe.
+
+ Rambo: Last Blood 
+
+4) Visualmente o site é fraco. Isso é uma afirmação.
+Diga como o site pode ser melhorado, focando sempre na experiência do usuário.
+ 
+   Como experiencia para usuario, existe varios pontos que devem ser visualmente melhorado. Como layout do corpo do site, as   informações e listas dos filmes poderiam ser maiores e tambem o recurso de imagem para os filmes melhoria pro entendimento. Uma   barra de navegação ajudaria para guiar o usuario. A palheta de cores que é usada tanto pro background quanto para as letra seria   uma coisa que mudaria.
