@@ -1,0 +1,63 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-image: url(../media/fundo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+h1
+{
+    font-size: 65px;
+    font-family: 'Norwester';
+    color: #fff;
+    margin: 20px;
+}
+
+h2
+{
+    font-size: 35px;
+    font-family: 'League Gothic';
+    color: #fff;
+    margin: 0px 20px;
+}
+
+
+.imgFormat1
+{
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+}
+
+.imgFormat2
+{
+    
+    width: 250px;
+    height: 400px;
+    padding: 20px;
+}
+
+.item
+{
+   
+}
+
+.flex-container {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 100px;
+
+  }
+
+ 
+  
