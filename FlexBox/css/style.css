@@ -1,0 +1,110 @@
+:root {
+    --grey: #EBEBEB;
+}
+
+body
+{
+    background: rgb(140,84,218);
+    background: radial-gradient(circle, rgba(140,84,218,1) 0%, rgba(126,77,195,1) 100%);
+    margin: 0;
+}
+
+h1
+{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tela
+{
+    height: 36.25rem;
+    width: 350px;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white; 
+    box-shadow: 10px 10px 5px #8c54da;
+}
+
+.title
+{
+    margin: 5px;
+    color: #b6b8b9;
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 3.5em;
+    text-shadow: 10px 10px 5px rgb(245, 243, 243);
+}
+
+
+
+.barra
+{
+    margin: 0px;
+    background-color: var(--grey);
+    height: 25px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom:1em;
+    box-shadow: 5px 5px 5px #f3f3f3;
+}
+
+.circle
+{
+    margin: 0px;
+    background-color: var(--grey);
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    margin-bottom:1em;
+    box-shadow: 5px 5px 5px #f3f3f3;
+}
+
+.barra2
+{
+    margin: 0px;
+    background-color: var(--grey);
+    height: 25px;
+    width: 40%;
+    border-radius: 5px;
+    margin-bottom:1em;
+    box-shadow: 5px 5px 5px #f3f3f3;
+}
+
+
+.footer {
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.circle:hover
+{
+    background-color: #dddbdb;
+}
+
+.barra2:hover
+{
+    background-color: #dddbdb;
+}
+
+.barra:hover
+{
+    background-color: #dddbdb;
+}
+
+.title:hover
+{
+    color: #dddbdb;
+}
