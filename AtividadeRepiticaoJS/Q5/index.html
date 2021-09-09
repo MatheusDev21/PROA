@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*5 - Faça um algoritmo que calcule e escreva a média aritmética dos números inteiros
+         informados pelo usuário. Considere que o primeiro sempre será menor que o segundo. */
+
+        var cont = 0;
+        var soma = 0;
+        var inicio = parseInt(prompt("Insira o valor inicial : "));
+        var fim = parseInt(prompt("Insira o valor final : "));
+
+        while (inicio >= fim) {
+            var inicio = parseInt(prompt("O valor inicial precisa ser menor que o final! | Insira o valor inicial : "));
+            var fim = parseInt(prompt("Insira o valor final : "));
+
+        }
+
+        while (inicio <= fim) {
+            cont = cont + 1;
+            soma = soma + inicio;
+            inicio++;
+
+        } 10
+
+        var result = soma / cont;
+        document.write10("O Resultador é " + result);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
