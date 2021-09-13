@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Cachorro</title>
+
+    <script>
+
+        /*Quantos anos tem o seu pet?
+        Você sabe quantos anos seu cachorro tem em anos humanos, mas e quanto aos anos de cachorro? 
+        E se fosse uma baleia? 
+        E se fosse um canguru? 
+
+        Vamos calcular?
+
+        Vamos começar com uma pesquisa. 
+        - Pesquise diferente animais e sua relação de idade com seres humanos. 
+
+        Agora, escreva uma função chamada calcularIdadePet que:
+        - Tem dois argumentos: a idade do seu cachorro e a taxa de conversão que será calculada.
+        - Calcula a idade do seu cão com base na taxa de conversão (1 ano humano equivale a 7 anos de cachorro, por exemplo).
+        -   Exiba o resultado na tela com a mensagem: "Seu pet tem X anos em anos humanos!"
+
+        Chame a função três vezes com diferentes conjuntos de valores. */
+
+        function calcularIdadePet(idade, taxaConversão, nome) {
+
+            var anosHumanos = idade * taxaConversão;
+            document.write(" O seu cachorro tem " + anosHumanos + " anos humanos! <br>");
+        }
+
+        calcularIdadePet(2, 7);
+        calcularIdadePet(10, 7);
+        calcularIdadePet(5, 7);
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

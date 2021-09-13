@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade Pet</title>
+
+
+    <script>
+
+        /*Não acabou não
+        Com base na questão acima, repita todo o procedimento, mas adicione e exiba mais dois valores nos argumentos: o nome do pet e a espécie dele. 
+    
+        Então
+        - Exiba o resultado na tela com a mensagem: "Batatinha tem X anos em anos de verdade! Um(a) baleia tem uma relação de Y anos de baleia para cada 1 ano humano". 
+        (Batatinha, X, baleia e Y são variáveis que serão substituídas)
+    
+        Chame a função três vezes com diferentes conjuntos de valores.
+        
+        */
+
+        function calcularIdadePet(nomePet, idadePet, especiePet, taxaConversao) {
+            var anosHumanos = idadePet * taxaConversao;
+            document.write(nomePet + " tem " + anosHumanos + " anos em de verdade! Um(a) " + especiePet + " tem uma relação de " + taxaConversao + " anos de " + especiePet + " para cada 1 anos humanos. <br>");
+        }
+
+
+        calcularIdadePet('Scooby', 10, 'Cachorro', 7);
+        calcularIdadePet('Jerry', 1, 'Rato', 30);
+        calcularIdadePet('Joseph', 1, 'Coelho', 21);
+
+
+
+    </script>
+
+</head>
+
+
+<body>
+
+</body>
+
+</html>
