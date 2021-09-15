@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Machine</title>
+
+    <script>
+
+        var saldo = 100;
+        var nomeUsuario = prompt("Insira seu nome: ");
+
+        alert(" Olá " + nomeUsuario + " é um prazer ter você por aqui! :)");
+        menuPrincipal(nomeUsuario, 100);
+
+
+
+        function menuPrincipal() {
+
+
+            var opcao = prompt(" 1 - CONSULTAR SALDO\n 2 - EXTRATO \n 3 - SACAR \n 4 - DEPOSITAR \n 5 - TRANSFERÊNCIA \n 6 - SAIR\n\n INSIRA UMA OPÇÃO 👇 ");
+            if (isNaN(opcao) == true) {
+                alert("OPERAÇÃO NÃO AUTORIZADA! | APENAS NUMEROS");
+                menuPrincipal();
+            }
+
+
+            switch (opcao) {
+
+                case '1':
+                    verSaldo(saldo);
+                case '2':
+                    verExtrato();
+
+                case '3':
+                    sacarDinheiro();
+
+                case '4':
+                    depositarDinheiro();
+
+                case '5':
+                    transferirDinheiro();
+
+                case '6':
+                    encerrarSessao();
+
+            }
+        }
+
+        function verSaldo(saldo) {
+            var senha = prompt("Insira a senha: ");
+            var resposta = Validacao(senha);
+
+
+            if (resposta == true) {
+                alert("SEU SALDO É DE " + saldo);
+                menuPrincipal(
+
+                );
+            }
+
+            else {
+                alert("SENHA INCORRETA !")
+                menuPrincipal();
+            }
+
+        }
+
+        function sacarDinheiro() {
+
+            var senha = prompt("Insira a senha: ");
+            var resposta = Validacao(senha);
+
+            if (resposta == true) {
+
+                var valorSaque = parseFloat(prompt("Digite o valor a ser sacado: "));
+
+                if (isNaN(valorSaque) == true) {
+                    alert("OPERAÇÃO NÃO AUTORIZADA! | APENAS NUMEROS");
+                    menuPrincipal();
+                }
+
+                if (valorSaque <= 0) {
+                    alert("OPERAÇÃO NÃO AUTORIZADA!");
+                    menuPrincipal();
+                }
+
+
+                if (valorSaque < saldo) {
+                    saldo = saldo - valorSaque;
+
+                    alert("SAQUE EFETUADO COM SUCESSO!          SALDO: " + saldo);
+                    menuPrincipal();
+                }
+
+                else {
+                    alert("OPERAÇÃO NÃO AUTORIZADA!");
+                    menuPrincipal();
+                }
+
+            }
+
+            else {
+                alert("SENHA INCORRETA !")
+                menuPrincipal();
+            }
+
+        }
+
+        function depositarDinheiro() {
+
+            var senha = prompt("Insira a senha: ");
+            var resposta = Validacao(senha);
+
+            if (resposta == true) {
+
+                var valorDepo = parseFloat(prompt("Digite o valor a ser depositado: "));
+
+                if (isNaN(valorDepo) == true) {
+                    alert("OPERAÇÃO NÃO AUTORIZADA! | APENAS NUMEROS");
+                    menuPrincipal();
+                }
+
+                if (valorDepo <= 0) {
+                    alert("OPERAÇÃO NÃO AUTORIZADA!");
+                    menuPrincipal();
+                }
+
+                else {
+                    saldo = saldo + valorDepo;
+                    alert("DEPOSITO EFETUADO COM SUCESSO!          SALDO: " + saldo);
+                    menuPrincipal();
+                }
+
+            }
+
+            else {
+                alert("SENHA INCORRETA !")
+                menuPrincipal();
+            }
+
+        }
+
+        function transferirDinheiro() {
+
+            var senha = prompt("Insira a senha: ");
+            var resposta = Validacao(senha);
+
+
+            if (resposta == true) {
+
+                var numConta = parseInt(prompt("Digite o numero da Conta: "));
+
+                if (isNaN(numConta) == true) {
+                    alert("OPERAÇÃO NÃO AUTORIZADA! | APENAS NUMEROS");
+                    menuPrincipal();
+                }
+
+
+
+
+                var valorTransf = parseFloat(prompt("Digite o valor a ser transferido: "));
+
+                if (valorTransf <= 0) {
+                    alert("OPERAÇÃO NÃO AUTORIZADA!");
+                    menuPrincipal();
+                }
+
+
+                if (valorTransf < saldo) {
+                    saldo = saldo - valorTransf;
+
+                    alert("TRANSFERENCIA REALIZADA COM SUCESSO!          SALDO: " + saldo);
+                    menuPrincipal();
+                }
+
+                else {
+                    alert("OPERAÇÃO NÃO AUTORIZADA!");
+                    menuPrincipal();
+                }
+
+            }
+
+        }
+
+        function verExtrato() {
+
+            alert("DIA/MÊS             VALOR\n12/10                  -100\n12/10                  -150");
+
+
+        }
+
+        function Validacao(senha) {
+            if (senha == '3589') {
+                return true;
+            }
+
+            else {
+                return false;
+            }
+        }
+
+        function encerrarSessao() {
+            var confirma = confirm('Você deseja sair?');
+            if (confirma) {
+                alert(nomeUsuario + " foi um prazer ter você por aqui! :)");
+
+
+            } else {
+                menuPrincipal();
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
