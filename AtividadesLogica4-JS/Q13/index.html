@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        /*13. Faça um programa que leia 10 números que o usuário vai informar. 
+        Todos os números lidos com valor inferior a 40 devem ser somados. Escreva o valor final da soma efetuada.*/
+
+        var cont = 0;
+        var numeros = [];
+        var soma = 0;
+
+        while (cont < 10) {
+            numeros.push(parseInt(prompt("Insira um valor: ")));
+
+            if (numeros[cont] < 40) {
+                soma += numeros[cont];
+            }
+            cont++;
+        }
+
+        alert("A Soma é " + soma);
+
+    </script>
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>

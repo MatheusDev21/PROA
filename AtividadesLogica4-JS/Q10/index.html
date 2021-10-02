@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*10. Faça um programa que leia um valor informado pelo usuário e imprima todos os valores inteiros entre 1 (inclusive)
+         e o numero informado (inclusive). Considere que o número informado será sempre maior que ZERO.*/
+
+        var num = parseInt(prompt("Insira um valor: "));
+        var cont = 1;
+
+        if (num < 0) {
+            alert("Numero menor que zero.");
+        }
+
+        while (cont < num + 1) {
+            document.write(cont + " <br>");
+            cont++;
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

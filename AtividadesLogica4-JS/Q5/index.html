@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /*5. Faça um programa que receba dois números reais e mostre um menu de opções (Subtrair, Somar, Multiplicar e Dividir),
+         realizando a operação de acordo com a opção escolhida no menu e mostrando o resultado.*/
+
+        var num1 = parseInt(prompt("Digite um valor: "));
+        var num2 = parseInt(prompt("Digite um valor: "));
+
+        var opcao = prompt(" Digite a operação que deseja realizar \n 1 > Somar    | 2> Subtrair    | 3 > Multiplicar    | 4 > Dividir    ");
+
+        switch (opcao) {
+            case "1":
+                Somar(num1, num2);
+                break;
+
+            case "2":
+                Subtrair(num1, num2);
+                break;
+
+            case "3":
+                Multiplicar(num1, num2);
+                break;
+
+            case "4":
+                Dividir(num1, num2);
+                break;
+
+            default:
+                alert("Erro");
+                break;
+
+        }
+
+        function Somar(a, b) {
+            var n1 = a;
+            var n2 = b;
+
+            var resultSoma = n1 + n2;
+            alert("" + n1 + " + " + n2 + " = " + resultSoma);
+        }
+
+        function Subtrair(a, b) {
+            var n1 = a;
+            var n2 = b;
+
+            var resultSub = n1 - n2;
+            alert("" + n1 + " - " + n2 + " = " + resultSub);
+        }
+
+        function Multiplicar(a, b) {
+            var n1 = a;
+            var n2 = b;
+
+            var resultMulti = n1 * n2;
+            alert("" + n1 + " * " + n2 + " = " + resultMulti);
+
+        }
+
+        function Dividir(a, b) {
+            var n1 = a;
+            var n2 = b;
+
+            var resultDiv = n1 / n2;
+            alert("" + n1 + " / " + n2 + " = " + resultDiv);
+
+        }
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
